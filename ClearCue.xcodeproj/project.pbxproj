@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14023124D5708C6E28037426 /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A10241EDAC77BB9EF2B0953 /* RecordingsView.swift */; };
+		1848FA624982F5B0D40E8BB8 /* WatchSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C07BA44B2A4F884B78FAF0 /* WatchSessionModel.swift */; };
+		186B8D444CB91FA3789021AB /* MochiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F70CEF6EACDAA36A24048DC /* MochiWatchApp.swift */; };
+		1BA28634D9A751861A8C0A08 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA8F526E7AE4BBF99508146 /* ConsentView.swift */; };
+		1FA38867C5EC8BE4F33CB2AB /* MochiWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F73C04D0C0B943755A36C40D /* MochiWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27B65229B6520E1FC2A400CC /* LocalSemanticAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B8F8E755F298CCBF02187E /* LocalSemanticAnalyzer.swift */; };
+		295E7D3567BC3C9F14BCE540 /* AssistHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024E2D696FEAB28791B9C7C4 /* AssistHomeView.swift */; };
+		30D0F2B907C4B502C66BD24F /* AudioPlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DE9D4CD9E36E196188C59 /* AudioPlaybackService.swift */; };
+		34AA8B6639E1237AD3947373 /* MochiWatchTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E474E6E7EC0E7C9CDDC38EE /* MochiWatchTheme.swift */; };
+		3603C3161D5A64D7645378AC /* RepairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2066243AA5C7A2ECB6DA19D1 /* RepairView.swift */; };
+		37DF20C4032C3734BE9BD615 /* OpenAIRealtimeTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0486F1399446F90A51AB642 /* OpenAIRealtimeTranscriber.swift */; };
+		38343B8E6271CEF58E1A4622 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEEE5D8B54C373C4879878D /* SpeechRecognitionService.swift */; };
+		39B343914C9FF5C5A5597B66 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13229A8FC9EC7514507F777D /* HealthKit.framework */; };
+		47592787A5155B2B2FBFF60C /* LocalSemanticAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA24CD6B4D2FA879E4C5483 /* LocalSemanticAnalyzerTests.swift */; };
+		55040922DEF79BA87BC39949 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D56F4A03C6FF24D72D4E5BF /* WatchConnectivity.framework */; };
+		5B413FDB3F7050641110BBF0 /* ClearCueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CA6B69EFDC191788597F5 /* ClearCueAPI.swift */; };
+		605CC4E78FA61FC09710DB43 /* CaptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484314B66E771C7C4E39CFE /* CaptionEngine.swift */; };
+		6345AEC96C4586250677DDF3 /* RecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937377E0D1384FA884C02383 /* RecapView.swift */; };
+		63DE30E39E4E11947A747552 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAE817A4E62B1741F798E39 /* OnboardingView.swift */; };
+		6B77FC00B9BF9CB513122CBE /* ConversationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A626ACCA4FCBC4FB93C63D /* ConversationStore.swift */; };
+		7A00192EC9B7422EF98387F9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55F49EC80FE2A0A00449C5 /* SettingsView.swift */; };
+		A301BD939FBA3C8C73DB2A72 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D56F4A03C6FF24D72D4E5BF /* WatchConnectivity.framework */; };
+		A4831F091F74EA77E924DAFC /* PhoneWatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7B94A2552F9D8691E60938 /* PhoneWatchConnectivityService.swift */; };
+		A75FBB0EDB59012C9CDC1064 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 354CA29329D6FDC77F1B085A /* FluidAudio */; };
+		AEAF42C38B11819FB01C56F7 /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292BD66AB46D757466F9E1C4 /* WatchRootView.swift */; };
+		B213DD32CE6CB5056122F1D2 /* ConversationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426ADC324F868654F67E3DA4 /* ConversationModels.swift */; };
+		B819FBEE30F8F48405CF6601 /* ConversationArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB32591B0FB88D0A3066761 /* ConversationArchive.swift */; };
+		BEC1ADF459826B7F644E4BA4 /* CatchUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89494052C8EAE955884E3D52 /* CatchUpView.swift */; };
+		C4A17E3CA91ADED04DC63ADD /* SpeakerEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4134D07928F779B622D6ED38 /* SpeakerEditorView.swift */; };
+		C52E65D721D1AC2A2AD34292 /* EmbeddedOpenAIKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D56EEBA658EAF7CE493FD01 /* EmbeddedOpenAIKeyProvider.swift */; };
+		CB3011E048A16D56B2DA6398 /* AudiogramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FDAA55BFAECB326F1F451F /* AudiogramService.swift */; };
+		CDA588FAACE5A78B35320E16 /* ConversationArchiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7CED7F55441D5F5DBF644D /* ConversationArchiveTests.swift */; };
+		D306E8537B51FE41FDDBF2E0 /* DirectOpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93128824C5F40972EDD204BF /* DirectOpenAIClient.swift */; };
+		D8254307A18D37B787F5340F /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 866BE24BF22A1C5F6EDFACC6 /* WhisperKit */; };
+		DE423A4C101BFE6D202D59D2 /* SimulatorSpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2995ACAC71F4AB0051B487BF /* SimulatorSpeechTranscriber.swift */; };
+		E2105FB6CD9D21772EF69E61 /* WatchConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD036987D2E976031D1636 /* WatchConnectivityTests.swift */; };
+		EBBDB1E350B69EA70FCCA8D7 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2BAE8A2831C8FEB01C175 /* ConversationView.swift */; };
+		F266EA0D6154CEE0760F6D0C /* RecordingChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982172B248A8DD8BB1646E7 /* RecordingChatView.swift */; };
+		F92F8AB0EE88A1D682CA91DF /* ClearCueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BAD04F0A8BDD69DB164E7 /* ClearCueApp.swift */; };
+		FA37E7C5452AF8267F9DD86C /* ConversationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CED33D1CB10759A2A98BB3 /* ConversationStoreTests.swift */; };
+		FAB084DFFDB5B051FDEF383C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B613CF41AC53AE6611DD7A /* Assets.xcassets */; };
+		FF95B1E7636EF87039D6C05D /* WhisperKitCaptionTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68052F0DE060F5BB23F5C79 /* WhisperKitCaptionTranscriber.swift */; };
+		FFE353D19C37EA022672AF5A /* ClearCueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC55B53105AC452BDAA7472 /* ClearCueTheme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE906EB6A24144341EC4C818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD961C41ED02CFCC19B30079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 632AA73233A496448F607362;
+			remoteInfo = MochiWatch;
+		};
+		C756720E800FEAFA5376BFB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD961C41ED02CFCC19B30079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C8459AA64BF324029A849B9;
+			remoteInfo = ClearCue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8223AE47C7585BE9F5A602B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1FA38867C5EC8BE4F33CB2AB /* MochiWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		024E2D696FEAB28791B9C7C4 /* AssistHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistHomeView.swift; sourceTree = "<group>"; };
+		04E5B9FB63CD09C2603607C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		13229A8FC9EC7514507F777D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1EA24CD6B4D2FA879E4C5483 /* LocalSemanticAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSemanticAnalyzerTests.swift; sourceTree = "<group>"; };
+		2066243AA5C7A2ECB6DA19D1 /* RepairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairView.swift; sourceTree = "<group>"; };
+		21D4E8BE8421CD9877CF9A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		25D2BAE8A2831C8FEB01C175 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		292BD66AB46D757466F9E1C4 /* WatchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRootView.swift; sourceTree = "<group>"; };
+		2995ACAC71F4AB0051B487BF /* SimulatorSpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSpeechTranscriber.swift; sourceTree = "<group>"; };
+		29CED33D1CB10759A2A98BB3 /* ConversationStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationStoreTests.swift; sourceTree = "<group>"; };
+		2F55F49EC80FE2A0A00449C5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3D56F4A03C6FF24D72D4E5BF /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		3E474E6E7EC0E7C9CDDC38EE /* MochiWatchTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiWatchTheme.swift; sourceTree = "<group>"; };
+		4134D07928F779B622D6ED38 /* SpeakerEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerEditorView.swift; sourceTree = "<group>"; };
+		426ADC324F868654F67E3DA4 /* ConversationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModels.swift; sourceTree = "<group>"; };
+		46D97017520E0E516679947F /* ClearCueTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClearCueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A231D95758AC4D3687D914D /* ClearCue.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClearCue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A10241EDAC77BB9EF2B0953 /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
+		5AAE817A4E62B1741F798E39 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5D56EEBA658EAF7CE493FD01 /* EmbeddedOpenAIKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedOpenAIKeyProvider.swift; sourceTree = "<group>"; };
+		641DE9D4CD9E36E196188C59 /* AudioPlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaybackService.swift; sourceTree = "<group>"; };
+		6484314B66E771C7C4E39CFE /* CaptionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionEngine.swift; sourceTree = "<group>"; };
+		7BEEE5D8B54C373C4879878D /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		88C07BA44B2A4F884B78FAF0 /* WatchSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionModel.swift; sourceTree = "<group>"; };
+		89494052C8EAE955884E3D52 /* CatchUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchUpView.swift; sourceTree = "<group>"; };
+		93128824C5F40972EDD204BF /* DirectOpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectOpenAIClient.swift; sourceTree = "<group>"; };
+		937377E0D1384FA884C02383 /* RecapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapView.swift; sourceTree = "<group>"; };
+		942CA6B69EFDC191788597F5 /* ClearCueAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCueAPI.swift; sourceTree = "<group>"; };
+		965BAD04F0A8BDD69DB164E7 /* ClearCueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCueApp.swift; sourceTree = "<group>"; };
+		9A7B94A2552F9D8691E60938 /* PhoneWatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWatchConnectivityService.swift; sourceTree = "<group>"; };
+		9F70CEF6EACDAA36A24048DC /* MochiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiWatchApp.swift; sourceTree = "<group>"; };
+		A1FDAA55BFAECB326F1F451F /* AudiogramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiogramService.swift; sourceTree = "<group>"; };
+		B0486F1399446F90A51AB642 /* OpenAIRealtimeTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRealtimeTranscriber.swift; sourceTree = "<group>"; };
+		B68052F0DE060F5BB23F5C79 /* WhisperKitCaptionTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperKitCaptionTranscriber.swift; sourceTree = "<group>"; };
+		CEA8F526E7AE4BBF99508146 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		D1B8F8E755F298CCBF02187E /* LocalSemanticAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSemanticAnalyzer.swift; sourceTree = "<group>"; };
+		D556C17272C4AF447CE776F2 /* ClearCue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClearCue.entitlements; sourceTree = "<group>"; };
+		DBB32591B0FB88D0A3066761 /* ConversationArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationArchive.swift; sourceTree = "<group>"; };
+		E1B613CF41AC53AE6611DD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4A626ACCA4FCBC4FB93C63D /* ConversationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationStore.swift; sourceTree = "<group>"; };
+		E982172B248A8DD8BB1646E7 /* RecordingChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChatView.swift; sourceTree = "<group>"; };
+		EE7CED7F55441D5F5DBF644D /* ConversationArchiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationArchiveTests.swift; sourceTree = "<group>"; };
+		F73C04D0C0B943755A36C40D /* MochiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MochiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC55B53105AC452BDAA7472 /* ClearCueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCueTheme.swift; sourceTree = "<group>"; };
+		FFAD036987D2E976031D1636 /* WatchConnectivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6867165994E2747CB1911EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55040922DEF79BA87BC39949 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0853EE0D7FB91D4FF745167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75FBB0EDB59012C9CDC1064 /* FluidAudio in Frameworks */,
+				D8254307A18D37B787F5340F /* WhisperKit in Frameworks */,
+				39B343914C9FF5C5A5597B66 /* HealthKit.framework in Frameworks */,
+				A301BD939FBA3C8C73DB2A72 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		064B0C1D2C96CB531E3C3684 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1FDAA55BFAECB326F1F451F /* AudiogramService.swift */,
+				641DE9D4CD9E36E196188C59 /* AudioPlaybackService.swift */,
+				942CA6B69EFDC191788597F5 /* ClearCueAPI.swift */,
+				DBB32591B0FB88D0A3066761 /* ConversationArchive.swift */,
+				93128824C5F40972EDD204BF /* DirectOpenAIClient.swift */,
+				5D56EEBA658EAF7CE493FD01 /* EmbeddedOpenAIKeyProvider.swift */,
+				D1B8F8E755F298CCBF02187E /* LocalSemanticAnalyzer.swift */,
+				B0486F1399446F90A51AB642 /* OpenAIRealtimeTranscriber.swift */,
+				9A7B94A2552F9D8691E60938 /* PhoneWatchConnectivityService.swift */,
+				2995ACAC71F4AB0051B487BF /* SimulatorSpeechTranscriber.swift */,
+				7BEEE5D8B54C373C4879878D /* SpeechRecognitionService.swift */,
+				B68052F0DE060F5BB23F5C79 /* WhisperKitCaptionTranscriber.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1B144455ED9C005F22CE1E2E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5AAE817A4E62B1741F798E39 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1CD7B539F08698AFF9AEAB93 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2F55F49EC80FE2A0A00449C5 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2283AE9791E4BDF3B07CCDF6 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E4A626ACCA4FCBC4FB93C63D /* ConversationStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		28F2B580FADA4B60EF5A3C5A /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				CEA8F526E7AE4BBF99508146 /* ConsentView.swift */,
+			);
+			path = Consent;
+			sourceTree = "<group>";
+		};
+		475B045B77ED35652C0401B3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				024E2D696FEAB28791B9C7C4 /* AssistHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4C9F4F823999FD4C4B4AC371 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1B613CF41AC53AE6611DD7A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C92F663BE21450717D1D94E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6484314B66E771C7C4E39CFE /* CaptionEngine.swift */,
+				426ADC324F868654F67E3DA4 /* ConversationModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BC361C1BB85B89B623D0F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A231D95758AC4D3687D914D /* ClearCue.app */,
+				46D97017520E0E516679947F /* ClearCueTests.xctest */,
+				F73C04D0C0B943755A36C40D /* MochiWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71599A6C5404A150E2B34C18 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				FCC55B53105AC452BDAA7472 /* ClearCueTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		87A7F43B2DAFD8FDBC5AA591 /* Recap */ = {
+			isa = PBXGroup;
+			children = (
+				937377E0D1384FA884C02383 /* RecapView.swift */,
+			);
+			path = Recap;
+			sourceTree = "<group>";
+		};
+		92AEC884E791232811ADB93A /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				25D2BAE8A2831C8FEB01C175 /* ConversationView.swift */,
+				4134D07928F779B622D6ED38 /* SpeakerEditorView.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		9D849488EA4D528086A6669C /* ClearCue */ = {
+			isa = PBXGroup;
+			children = (
+				D556C17272C4AF447CE776F2 /* ClearCue.entitlements */,
+				21D4E8BE8421CD9877CF9A17 /* Info.plist */,
+				D33553F95E561A0DF7D51DB7 /* App */,
+				71599A6C5404A150E2B34C18 /* Design */,
+				9DD58E02C4BD35BEEDCF8367 /* Features */,
+				5C92F663BE21450717D1D94E /* Models */,
+				4C9F4F823999FD4C4B4AC371 /* Resources */,
+				064B0C1D2C96CB531E3C3684 /* Services */,
+				2283AE9791E4BDF3B07CCDF6 /* Store */,
+			);
+			path = ClearCue;
+			sourceTree = "<group>";
+		};
+		9DD58E02C4BD35BEEDCF8367 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				ABD4D1E4A6A9FB2BD843E80D /* CatchUp */,
+				A9A3637717439C4B4B74FB0C /* Chat */,
+				28F2B580FADA4B60EF5A3C5A /* Consent */,
+				92AEC884E791232811ADB93A /* Conversation */,
+				475B045B77ED35652C0401B3 /* Home */,
+				1B144455ED9C005F22CE1E2E /* Onboarding */,
+				87A7F43B2DAFD8FDBC5AA591 /* Recap */,
+				C60A9F400EF8DA78DCF2AE5B /* Recordings */,
+				ECACE2BE52D3A122EADD122D /* Repair */,
+				1CD7B539F08698AFF9AEAB93 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A59C6C01C0F5D5249394AD79 /* ClearCueTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE7CED7F55441D5F5DBF644D /* ConversationArchiveTests.swift */,
+				29CED33D1CB10759A2A98BB3 /* ConversationStoreTests.swift */,
+				1EA24CD6B4D2FA879E4C5483 /* LocalSemanticAnalyzerTests.swift */,
+				FFAD036987D2E976031D1636 /* WatchConnectivityTests.swift */,
+			);
+			path = ClearCueTests;
+			sourceTree = "<group>";
+		};
+		A9A3637717439C4B4B74FB0C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E982172B248A8DD8BB1646E7 /* RecordingChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		ABD4D1E4A6A9FB2BD843E80D /* CatchUp */ = {
+			isa = PBXGroup;
+			children = (
+				89494052C8EAE955884E3D52 /* CatchUpView.swift */,
+			);
+			path = CatchUp;
+			sourceTree = "<group>";
+		};
+		C60A9F400EF8DA78DCF2AE5B /* Recordings */ = {
+			isa = PBXGroup;
+			children = (
+				5A10241EDAC77BB9EF2B0953 /* RecordingsView.swift */,
+			);
+			path = Recordings;
+			sourceTree = "<group>";
+		};
+		D33553F95E561A0DF7D51DB7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				965BAD04F0A8BDD69DB164E7 /* ClearCueApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DF2E0E79BB6FC074D1A216AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13229A8FC9EC7514507F777D /* HealthKit.framework */,
+				3D56F4A03C6FF24D72D4E5BF /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9E37C895BF824FBC8EC759E = {
+			isa = PBXGroup;
+			children = (
+				9D849488EA4D528086A6669C /* ClearCue */,
+				A59C6C01C0F5D5249394AD79 /* ClearCueTests */,
+				F93FD6ABA9329A84119C2ABF /* MochiWatch */,
+				DF2E0E79BB6FC074D1A216AF /* Frameworks */,
+				6BC361C1BB85B89B623D0F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECACE2BE52D3A122EADD122D /* Repair */ = {
+			isa = PBXGroup;
+			children = (
+				2066243AA5C7A2ECB6DA19D1 /* RepairView.swift */,
+			);
+			path = Repair;
+			sourceTree = "<group>";
+		};
+		F93FD6ABA9329A84119C2ABF /* MochiWatch */ = {
+			isa = PBXGroup;
+			children = (
+				04E5B9FB63CD09C2603607C7 /* Info.plist */,
+				9F70CEF6EACDAA36A24048DC /* MochiWatchApp.swift */,
+				3E474E6E7EC0E7C9CDDC38EE /* MochiWatchTheme.swift */,
+				292BD66AB46D757466F9E1C4 /* WatchRootView.swift */,
+				88C07BA44B2A4F884B78FAF0 /* WatchSessionModel.swift */,
+			);
+			path = MochiWatch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		632AA73233A496448F607362 /* MochiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 960975542FECCAC56169EB2C /* Build configuration list for PBXNativeTarget "MochiWatch" */;
+			buildPhases = (
+				C89FAD09E21ED83C028DB03C /* Sources */,
+				6867165994E2747CB1911EF6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MochiWatch;
+			packageProductDependencies = (
+			);
+			productName = MochiWatch;
+			productReference = F73C04D0C0B943755A36C40D /* MochiWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C8459AA64BF324029A849B9 /* ClearCue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DE7019101B0D62470F8FB5C /* Build configuration list for PBXNativeTarget "ClearCue" */;
+			buildPhases = (
+				DD3C98012F836DF792238CFE /* Sources */,
+				1AF5759E7FC0C96DF3710DBC /* Resources */,
+				F0853EE0D7FB91D4FF745167 /* Frameworks */,
+				F8223AE47C7585BE9F5A602B /* Embed Watch Content */,
+				408A57E72D19D90258F7B235 /* Embed temporary OpenAI key */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D23A47BE79FC54DC6FBE5F98 /* PBXTargetDependency */,
+			);
+			name = ClearCue;
+			packageProductDependencies = (
+				354CA29329D6FDC77F1B085A /* FluidAudio */,
+				866BE24BF22A1C5F6EDFACC6 /* WhisperKit */,
+			);
+			productName = ClearCue;
+			productReference = 4A231D95758AC4D3687D914D /* ClearCue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD3D5D517B774EE7E274043E /* ClearCueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6481A7B04F8276725C77C77C /* Build configuration list for PBXNativeTarget "ClearCueTests" */;
+			buildPhases = (
+				2BB0A0606BBAC3FCD8AEEB9F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A2324833095237837290082 /* PBXTargetDependency */,
+			);
+			name = ClearCueTests;
+			packageProductDependencies = (
+			);
+			productName = ClearCueTests;
+			productReference = 46D97017520E0E516679947F /* ClearCueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD961C41ED02CFCC19B30079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					632AA73233A496448F607362 = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+					7C8459AA64BF324029A849B9 = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+					DD3D5D517B774EE7E274043E = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 066E48D50257EC9211682BA8 /* Build configuration list for PBXProject "ClearCue" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E9E37C895BF824FBC8EC759E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01F08936F11F131531B304FC /* XCRemoteSwiftPackageReference "FluidAudio" */,
+				FEB14BF324678F3F1C90C929 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6BC361C1BB85B89B623D0F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C8459AA64BF324029A849B9 /* ClearCue */,
+				DD3D5D517B774EE7E274043E /* ClearCueTests */,
+				632AA73233A496448F607362 /* MochiWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF5759E7FC0C96DF3710DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB084DFFDB5B051FDEF383C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408A57E72D19D90258F7B235 /* Embed temporary OpenAI key */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed temporary OpenAI key";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nset -eu\n\nenvironment_file=\"${SRCROOT}/.env.local\"\noutput_file=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MochiOpenAIKey.txt\"\n\n/bin/mkdir -p \"$(/usr/bin/dirname \"${output_file}\")\"\n\nif [ ! -f \"${environment_file}\" ]; then\n  : > \"${output_file}\"\n  echo \"Mochi: no local OpenAI key was embedded.\"\n  exit 0\nfi\n\nopenai_key=$(/usr/bin/awk '\n  /^[[:space:]]*OPENAI_API_KEY[[:space:]]*=/ {\n    line = $0\n    sub(/^[[:space:]]*OPENAI_API_KEY[[:space:]]*=[[:space:]]*/, \"\", line)\n    print line\n    exit\n  }\n' \"${environment_file}\")\n\ncase \"${openai_key}\" in\n  \\\"*\\\") openai_key=${openai_key#\\\"}; openai_key=${openai_key%\\\"} ;;\n  \\'*\\') openai_key=${openai_key#\\'}; openai_key=${openai_key%\\'} ;;\nesac\n\nif [ -z \"${openai_key}\" ]; then\n  : > \"${output_file}\"\n  echo \"Mochi: OPENAI_API_KEY was not found in .env.local.\"\n  exit 0\nfi\n\n/usr/bin/printf '%s' \"${openai_key}\" > \"${output_file}\"\n/bin/chmod 600 \"${output_file}\"\necho \"Mochi: embedded the temporary local OpenAI credential.\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BB0A0606BBAC3FCD8AEEB9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA588FAACE5A78B35320E16 /* ConversationArchiveTests.swift in Sources */,
+				FA37E7C5452AF8267F9DD86C /* ConversationStoreTests.swift in Sources */,
+				47592787A5155B2B2FBFF60C /* LocalSemanticAnalyzerTests.swift in Sources */,
+				E2105FB6CD9D21772EF69E61 /* WatchConnectivityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C89FAD09E21ED83C028DB03C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B8D444CB91FA3789021AB /* MochiWatchApp.swift in Sources */,
+				34AA8B6639E1237AD3947373 /* MochiWatchTheme.swift in Sources */,
+				AEAF42C38B11819FB01C56F7 /* WatchRootView.swift in Sources */,
+				1848FA624982F5B0D40E8BB8 /* WatchSessionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3C98012F836DF792238CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295E7D3567BC3C9F14BCE540 /* AssistHomeView.swift in Sources */,
+				30D0F2B907C4B502C66BD24F /* AudioPlaybackService.swift in Sources */,
+				CB3011E048A16D56B2DA6398 /* AudiogramService.swift in Sources */,
+				605CC4E78FA61FC09710DB43 /* CaptionEngine.swift in Sources */,
+				BEC1ADF459826B7F644E4BA4 /* CatchUpView.swift in Sources */,
+				5B413FDB3F7050641110BBF0 /* ClearCueAPI.swift in Sources */,
+				F92F8AB0EE88A1D682CA91DF /* ClearCueApp.swift in Sources */,
+				FFE353D19C37EA022672AF5A /* ClearCueTheme.swift in Sources */,
+				1BA28634D9A751861A8C0A08 /* ConsentView.swift in Sources */,
+				B819FBEE30F8F48405CF6601 /* ConversationArchive.swift in Sources */,
+				B213DD32CE6CB5056122F1D2 /* ConversationModels.swift in Sources */,
+				6B77FC00B9BF9CB513122CBE /* ConversationStore.swift in Sources */,
+				EBBDB1E350B69EA70FCCA8D7 /* ConversationView.swift in Sources */,
+				D306E8537B51FE41FDDBF2E0 /* DirectOpenAIClient.swift in Sources */,
+				C52E65D721D1AC2A2AD34292 /* EmbeddedOpenAIKeyProvider.swift in Sources */,
+				27B65229B6520E1FC2A400CC /* LocalSemanticAnalyzer.swift in Sources */,
+				63DE30E39E4E11947A747552 /* OnboardingView.swift in Sources */,
+				37DF20C4032C3734BE9BD615 /* OpenAIRealtimeTranscriber.swift in Sources */,
+				A4831F091F74EA77E924DAFC /* PhoneWatchConnectivityService.swift in Sources */,
+				6345AEC96C4586250677DDF3 /* RecapView.swift in Sources */,
+				F266EA0D6154CEE0760F6D0C /* RecordingChatView.swift in Sources */,
+				14023124D5708C6E28037426 /* RecordingsView.swift in Sources */,
+				3603C3161D5A64D7645378AC /* RepairView.swift in Sources */,
+				7A00192EC9B7422EF98387F9 /* SettingsView.swift in Sources */,
+				DE423A4C101BFE6D202D59D2 /* SimulatorSpeechTranscriber.swift in Sources */,
+				C4A17E3CA91ADED04DC63ADD /* SpeakerEditorView.swift in Sources */,
+				38343B8E6271CEF58E1A4622 /* SpeechRecognitionService.swift in Sources */,
+				FF95B1E7636EF87039D6C05D /* WhisperKitCaptionTranscriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A2324833095237837290082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C8459AA64BF324029A849B9 /* ClearCue */;
+			targetProxy = C756720E800FEAFA5376BFB3 /* PBXContainerItemProxy */;
+		};
+		D23A47BE79FC54DC6FBE5F98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 632AA73233A496448F607362 /* MochiWatch */;
+			targetProxy = AE906EB6A24144341EC4C818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		057F0168051189E341598465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearCue.app/ClearCue";
+			};
+			name = Debug;
+		};
+		612EDF83B0F497B90DC9B2A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MochiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue.watchkitapp;
+				PRODUCT_NAME = MochiWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		6ABAB46D4474DE8D277A56D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MochiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue.watchkitapp;
+				PRODUCT_NAME = MochiWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		868A3D2BD6C120E752D9DD03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClearCue/ClearCue.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = ClearCue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue;
+				PRODUCT_NAME = ClearCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA32226BF2675C60AD4BB4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearCue.app/ClearCue";
+			};
+			name = Release;
+		};
+		E06823414A0FE725A57E6EDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3WG2K4XBS6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		F95B01FBB63FB9CBFD366C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3WG2K4XBS6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		FD9851F78A98A01D141E3938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClearCue/ClearCue.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = ClearCue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.clearcue;
+				PRODUCT_NAME = ClearCue;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066E48D50257EC9211682BA8 /* Build configuration list for PBXProject "ClearCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F95B01FBB63FB9CBFD366C3D /* Debug */,
+				E06823414A0FE725A57E6EDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0DE7019101B0D62470F8FB5C /* Build configuration list for PBXNativeTarget "ClearCue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				868A3D2BD6C120E752D9DD03 /* Debug */,
+				FD9851F78A98A01D141E3938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6481A7B04F8276725C77C77C /* Build configuration list for PBXNativeTarget "ClearCueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057F0168051189E341598465 /* Debug */,
+				BA32226BF2675C60AD4BB4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		960975542FECCAC56169EB2C /* Build configuration list for PBXNativeTarget "MochiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				612EDF83B0F497B90DC9B2A5 /* Debug */,
+				6ABAB46D4474DE8D277A56D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01F08936F11F131531B304FC /* XCRemoteSwiftPackageReference "FluidAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidInference/FluidAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.4;
+			};
+		};
+		FEB14BF324678F3F1C90C929 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/argmax-oss-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		354CA29329D6FDC77F1B085A /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F08936F11F131531B304FC /* XCRemoteSwiftPackageReference "FluidAudio" */;
+			productName = FluidAudio;
+		};
+		866BE24BF22A1C5F6EDFACC6 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEB14BF324678F3F1C90C929 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD961C41ED02CFCC19B30079 /* Project object */;
+}

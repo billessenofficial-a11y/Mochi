@@ -1,0 +1,25 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+
+# Local secrets
+.env
+.env.local
+Secrets.xcconfig
+
+# Local simulator QA captures
+clearcue-*.png
+
+# Web build and deployment artifacts
+Website/node_modules/
+Website/dist/
+Website/.vercel/
+Website/qa/
