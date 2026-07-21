@@ -1,5 +1,5 @@
 {
-  "name": "clearcue-api",
+  "name": "mochi-api",
   "private": true,
   "type": "module",
   "scripts": {

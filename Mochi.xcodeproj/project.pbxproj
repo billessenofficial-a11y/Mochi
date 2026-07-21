@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B8EAC0153F35BD1E4DEACB /* ConversationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256FBCAAD852B84F4C9C7E7 /* ConversationStoreTests.swift */; };
+		04EB4471E4F0AAB47970ED40 /* DirectOpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44AC6DC2566646CACF2436E /* DirectOpenAIClient.swift */; };
+		07A26F887845667A841C0C6F /* SimulatorSpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF753D4DA77337E9A7639270 /* SimulatorSpeechTranscriber.swift */; };
+		0933702FFE83A85F0644901E /* MochiWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 58C9310A4D05A299B1765E55 /* MochiWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0DF0D7F86922FBEC27F4E748 /* LocalSemanticAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CCD250788D78B505ABD297 /* LocalSemanticAnalyzerTests.swift */; };
+		1429B4B99701870F574E0EFE /* AudioPlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75168C273E4FB63CF8C9479 /* AudioPlaybackService.swift */; };
+		1DB10D5127D6EDC1406DDD0B /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9599ADDFB58C1E3127B9E00 /* WatchConnectivity.framework */; };
+		20291C2A39B1313082DCE011 /* ConversationArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970714A3D40D8ABDC4D34212 /* ConversationArchive.swift */; };
+		26D601C7B79F337B68F5BB07 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23833C24DA8AE560A0671F /* SpeechRecognitionService.swift */; };
+		27FB94EE2D365B611D4F4963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84018725345F643DB37C109 /* Assets.xcassets */; };
+		29397A3377857AD806A892B5 /* AudiogramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE1885D02732BA981762895 /* AudiogramService.swift */; };
+		2EF8C9BF56BC3C0F06F3C8D8 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 22301E40C65FD30F82EAC68C /* FluidAudio */; };
+		2FF34C97FA7BEFCB88E16D48 /* MochiTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF368A4479AF2BD127B62732 /* MochiTheme.swift */; };
+		3A44C7A915CDDA39A95BF2FA /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE335A207B3E25B2D5FC062 /* WatchRootView.swift */; };
+		3C1EC2A4266920FCFEA56D02 /* MochiWatchTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB66D4132EF89948CFF8505 /* MochiWatchTheme.swift */; };
+		3C83E7CE65ADEB6CB03E885A /* RecordingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2F3D0E1DF087CF1A09DD0D /* RecordingsView.swift */; };
+		40E3BAB346D4B54B6975570A /* AssistHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A8D160BD969E26B2C1B22 /* AssistHomeView.swift */; };
+		43462907D1DFF3405FF6ADBA /* ConversationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FA6DF74EF35680E1DE429F /* ConversationModels.swift */; };
+		5372CCCBB845928E9D4C6083 /* SpeakerEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DC77B31F7B8EC2F73A9B3D /* SpeakerEditorView.swift */; };
+		54557A84E886FB4F6C2D0179 /* LocalSemanticAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43257DB5A6F95B1464AA1EED /* LocalSemanticAnalyzer.swift */; };
+		5754782D2C4797EDFBD29711 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9599ADDFB58C1E3127B9E00 /* WatchConnectivity.framework */; };
+		57946352C50B0539D600F948 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA842399B39BD392FB58B5BE /* ConsentView.swift */; };
+		59F47F7094898292250D2765 /* RepairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EB0E3AA47F5C5B8F0E428 /* RepairView.swift */; };
+		631C3AB0610DDB94F0AD907F /* CatchUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4EF409D681431394F63550 /* CatchUpView.swift */; };
+		6C257ECD246C25D72D4A112F /* WatchSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0953E09793CE3B983D411D4 /* WatchSessionModel.swift */; };
+		6C7A99B73F42427ED547486D /* EmbeddedOpenAIKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BCF3DF49E2464926EABED7 /* EmbeddedOpenAIKeyProvider.swift */; };
+		742A62D8FC83E99C54FE87E4 /* PhoneWatchConnectivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D90520609A9DEC836A50054 /* PhoneWatchConnectivityService.swift */; };
+		7BEACA5C99C1B98F3B5C0F87 /* RecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDCED7DC6237CFD02DAABEC /* RecapView.swift */; };
+		84711246748C469D8862310F /* MochiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C9DE38A8F2DFD280B0056 /* MochiWatchApp.swift */; };
+		8A5750EFC9EB91D68FA02D17 /* OpenAIRealtimeTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F00C772CEC03545E4C7CE9E /* OpenAIRealtimeTranscriber.swift */; };
+		8FA4CAD9C68817522D5417D0 /* WhisperKitCaptionTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCA52471E6D20DD9F098AB6 /* WhisperKitCaptionTranscriber.swift */; };
+		9081D7D6BE24CDF0D380ECF7 /* ConversationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEADCF239183A9E01C836FB /* ConversationStore.swift */; };
+		A349F9F5FAA48B1BC39624C9 /* CaptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69BA6563B4E54BDBBA2D0C /* CaptionEngine.swift */; };
+		A94407C4113E1256E5F3F1F1 /* MochiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F1395EE67A18D2E6F46EF /* MochiApp.swift */; };
+		B96FA0F856F7DBC61E954DEC /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7EBD997F03763B93E3447C2 /* WhisperKit */; };
+		BC6E0C61DD094482F13CBF50 /* ConversationArchiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941C62F71CA01A4516A6D972 /* ConversationArchiveTests.swift */; };
+		CE1C9FB63247FEAAD0AA7621 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91F4BDA157165B454382DD /* SettingsView.swift */; };
+		D0EEF8C73236B9A89B1EDA5D /* RecordingChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1DE5DCB2E710568A84FC6D /* RecordingChatView.swift */; };
+		DAB366631D8F1C6FA06A8F6B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50F9C96BC2DDB43857D773 /* OnboardingView.swift */; };
+		DAD70DB06AB0C305C2914D08 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E4F46DCF7226009034F05 /* ConversationView.swift */; };
+		DCD1C10D3EF49055ED01AE69 /* MochiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0527105A74FA4F1E79813F9A /* MochiAPI.swift */; };
+		DDAE5176F002A138172610FC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC939DA3C3FCB987CCEE506 /* HealthKit.framework */; };
+		EBCC329DCE66D12F06C54ED9 /* WatchConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE5C0F13D23FEC0C3BB3482 /* WatchConnectivityTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DA584587C9643BB347B9C1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEDBBB38DF9FF12BE415E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A488D784D2E7B77B4159EAE8;
+			remoteInfo = MochiWatch;
+		};
+		831AF273774E90CE11C6569A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CEDBBB38DF9FF12BE415E62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F0CBACB6A24F1429669699;
+			remoteInfo = Mochi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D24C12E9D97604EA818816F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0933702FFE83A85F0644901E /* MochiWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001A8D160BD969E26B2C1B22 /* AssistHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistHomeView.swift; sourceTree = "<group>"; };
+		0527105A74FA4F1E79813F9A /* MochiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiAPI.swift; sourceTree = "<group>"; };
+		1579413E402CF3460BB31691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1AE1885D02732BA981762895 /* AudiogramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiogramService.swift; sourceTree = "<group>"; };
+		1E5708D9AFC95C265FAC44A8 /* Mochi.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Mochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1DE5DCB2E710568A84FC6D /* RecordingChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingChatView.swift; sourceTree = "<group>"; };
+		43257DB5A6F95B1464AA1EED /* LocalSemanticAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSemanticAnalyzer.swift; sourceTree = "<group>"; };
+		4A69BA6563B4E54BDBBA2D0C /* CaptionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionEngine.swift; sourceTree = "<group>"; };
+		4C91F4BDA157165B454382DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4D90520609A9DEC836A50054 /* PhoneWatchConnectivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWatchConnectivityService.swift; sourceTree = "<group>"; };
+		4F00C772CEC03545E4C7CE9E /* OpenAIRealtimeTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRealtimeTranscriber.swift; sourceTree = "<group>"; };
+		501EB0E3AA47F5C5B8F0E428 /* RepairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairView.swift; sourceTree = "<group>"; };
+		5099E14B610FB61C5AF29F5F /* Mochi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mochi.entitlements; sourceTree = "<group>"; };
+		58C9310A4D05A299B1765E55 /* MochiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MochiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CCD250788D78B505ABD297 /* LocalSemanticAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSemanticAnalyzerTests.swift; sourceTree = "<group>"; };
+		633E4F46DCF7226009034F05 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		64BCF3DF49E2464926EABED7 /* EmbeddedOpenAIKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedOpenAIKeyProvider.swift; sourceTree = "<group>"; };
+		6CCA52471E6D20DD9F098AB6 /* WhisperKitCaptionTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperKitCaptionTranscriber.swift; sourceTree = "<group>"; };
+		759C9DE38A8F2DFD280B0056 /* MochiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiWatchApp.swift; sourceTree = "<group>"; };
+		7B7568A3FED4CDAB1349A569 /* MochiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MochiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE5C0F13D23FEC0C3BB3482 /* WatchConnectivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityTests.swift; sourceTree = "<group>"; };
+		81F372E9153179C888874948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8E2F3D0E1DF087CF1A09DD0D /* RecordingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsView.swift; sourceTree = "<group>"; };
+		9256FBCAAD852B84F4C9C7E7 /* ConversationStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationStoreTests.swift; sourceTree = "<group>"; };
+		93FA6DF74EF35680E1DE429F /* ConversationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModels.swift; sourceTree = "<group>"; };
+		941C62F71CA01A4516A6D972 /* ConversationArchiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationArchiveTests.swift; sourceTree = "<group>"; };
+		970714A3D40D8ABDC4D34212 /* ConversationArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationArchive.swift; sourceTree = "<group>"; };
+		9A50F9C96BC2DDB43857D773 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		9DEADCF239183A9E01C836FB /* ConversationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationStore.swift; sourceTree = "<group>"; };
+		9F23833C24DA8AE560A0671F /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		C0953E09793CE3B983D411D4 /* WatchSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionModel.swift; sourceTree = "<group>"; };
+		CCC939DA3C3FCB987CCEE506 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		CF368A4479AF2BD127B62732 /* MochiTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiTheme.swift; sourceTree = "<group>"; };
+		DA842399B39BD392FB58B5BE /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentView.swift; sourceTree = "<group>"; };
+		E75168C273E4FB63CF8C9479 /* AudioPlaybackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlaybackService.swift; sourceTree = "<group>"; };
+		E84018725345F643DB37C109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA3F1395EE67A18D2E6F46EF /* MochiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiApp.swift; sourceTree = "<group>"; };
+		ED4EF409D681431394F63550 /* CatchUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchUpView.swift; sourceTree = "<group>"; };
+		EEE335A207B3E25B2D5FC062 /* WatchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRootView.swift; sourceTree = "<group>"; };
+		F44AC6DC2566646CACF2436E /* DirectOpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectOpenAIClient.swift; sourceTree = "<group>"; };
+		F9599ADDFB58C1E3127B9E00 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		F9DC77B31F7B8EC2F73A9B3D /* SpeakerEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerEditorView.swift; sourceTree = "<group>"; };
+		FCB66D4132EF89948CFF8505 /* MochiWatchTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MochiWatchTheme.swift; sourceTree = "<group>"; };
+		FDDCED7DC6237CFD02DAABEC /* RecapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecapView.swift; sourceTree = "<group>"; };
+		FF753D4DA77337E9A7639270 /* SimulatorSpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSpeechTranscriber.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C76DBAC953E04058FDEF313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EF8C9BF56BC3C0F06F3C8D8 /* FluidAudio in Frameworks */,
+				B96FA0F856F7DBC61E954DEC /* WhisperKit in Frameworks */,
+				DDAE5176F002A138172610FC /* HealthKit.framework in Frameworks */,
+				1DB10D5127D6EDC1406DDD0B /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618F6238E9DB6A001DEA84CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5754782D2C4797EDFBD29711 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03373FE2C0938D7B45DFC6C5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EA3F1395EE67A18D2E6F46EF /* MochiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		06ADA984BFD88A06B7D7B4A7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				1F1DE5DCB2E710568A84FC6D /* RecordingChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		0812C45D8F7D4387F9887F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC939DA3C3FCB987CCEE506 /* HealthKit.framework */,
+				F9599ADDFB58C1E3127B9E00 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FBDC2B2B7287FEF14FBC8D7 /* Recordings */ = {
+			isa = PBXGroup;
+			children = (
+				8E2F3D0E1DF087CF1A09DD0D /* RecordingsView.swift */,
+			);
+			path = Recordings;
+			sourceTree = "<group>";
+		};
+		430A124857BE8B7FB5C4EEBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1AE1885D02732BA981762895 /* AudiogramService.swift */,
+				E75168C273E4FB63CF8C9479 /* AudioPlaybackService.swift */,
+				970714A3D40D8ABDC4D34212 /* ConversationArchive.swift */,
+				F44AC6DC2566646CACF2436E /* DirectOpenAIClient.swift */,
+				64BCF3DF49E2464926EABED7 /* EmbeddedOpenAIKeyProvider.swift */,
+				43257DB5A6F95B1464AA1EED /* LocalSemanticAnalyzer.swift */,
+				0527105A74FA4F1E79813F9A /* MochiAPI.swift */,
+				4F00C772CEC03545E4C7CE9E /* OpenAIRealtimeTranscriber.swift */,
+				4D90520609A9DEC836A50054 /* PhoneWatchConnectivityService.swift */,
+				FF753D4DA77337E9A7639270 /* SimulatorSpeechTranscriber.swift */,
+				9F23833C24DA8AE560A0671F /* SpeechRecognitionService.swift */,
+				6CCA52471E6D20DD9F098AB6 /* WhisperKitCaptionTranscriber.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4CE82F9AC1FAA380CBAA634D /* MochiWatch */ = {
+			isa = PBXGroup;
+			children = (
+				81F372E9153179C888874948 /* Info.plist */,
+				759C9DE38A8F2DFD280B0056 /* MochiWatchApp.swift */,
+				FCB66D4132EF89948CFF8505 /* MochiWatchTheme.swift */,
+				EEE335A207B3E25B2D5FC062 /* WatchRootView.swift */,
+				C0953E09793CE3B983D411D4 /* WatchSessionModel.swift */,
+			);
+			path = MochiWatch;
+			sourceTree = "<group>";
+		};
+		4FD25CB99D83BAEA7DADC274 /* Repair */ = {
+			isa = PBXGroup;
+			children = (
+				501EB0E3AA47F5C5B8F0E428 /* RepairView.swift */,
+			);
+			path = Repair;
+			sourceTree = "<group>";
+		};
+		62FFC0F33CD83E57782BDC2C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				9A50F9C96BC2DDB43857D773 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		89C31DB77873A61400CBD988 = {
+			isa = PBXGroup;
+			children = (
+				8B0777A93217580C67664C3F /* Mochi */,
+				CF0C88E3612ADD1EE2440E47 /* MochiTests */,
+				4CE82F9AC1FAA380CBAA634D /* MochiWatch */,
+				0812C45D8F7D4387F9887F67 /* Frameworks */,
+				CF5E594876079175C6CBDC4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B0777A93217580C67664C3F /* Mochi */ = {
+			isa = PBXGroup;
+			children = (
+				1579413E402CF3460BB31691 /* Info.plist */,
+				5099E14B610FB61C5AF29F5F /* Mochi.entitlements */,
+				03373FE2C0938D7B45DFC6C5 /* App */,
+				F8DAED51FF2D3E5B40FA5E2B /* Design */,
+				BD61B7DF53944A205B32FB1B /* Features */,
+				D88C1B7A845E2C7A9B47BFBA /* Models */,
+				9F1FD036966A84079162B664 /* Resources */,
+				430A124857BE8B7FB5C4EEBD /* Services */,
+				FCCFE7A38D018C90FC76BCC4 /* Store */,
+			);
+			path = Mochi;
+			sourceTree = "<group>";
+		};
+		9F1FD036966A84079162B664 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E84018725345F643DB37C109 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF0E7A6F95EBBF17BD02ADA0 /* Recap */ = {
+			isa = PBXGroup;
+			children = (
+				FDDCED7DC6237CFD02DAABEC /* RecapView.swift */,
+			);
+			path = Recap;
+			sourceTree = "<group>";
+		};
+		BD04389F4723FA14D10AFE55 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				001A8D160BD969E26B2C1B22 /* AssistHomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BD61B7DF53944A205B32FB1B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D802968F211E54237BF42831 /* CatchUp */,
+				06ADA984BFD88A06B7D7B4A7 /* Chat */,
+				F5546E47DF885DCCD9676E7A /* Consent */,
+				E645C34594365662E7B7A4EB /* Conversation */,
+				BD04389F4723FA14D10AFE55 /* Home */,
+				62FFC0F33CD83E57782BDC2C /* Onboarding */,
+				AF0E7A6F95EBBF17BD02ADA0 /* Recap */,
+				2FBDC2B2B7287FEF14FBC8D7 /* Recordings */,
+				4FD25CB99D83BAEA7DADC274 /* Repair */,
+				EFE5E9605218ADC2F4C1D2E2 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CF0C88E3612ADD1EE2440E47 /* MochiTests */ = {
+			isa = PBXGroup;
+			children = (
+				941C62F71CA01A4516A6D972 /* ConversationArchiveTests.swift */,
+				9256FBCAAD852B84F4C9C7E7 /* ConversationStoreTests.swift */,
+				62CCD250788D78B505ABD297 /* LocalSemanticAnalyzerTests.swift */,
+				7FE5C0F13D23FEC0C3BB3482 /* WatchConnectivityTests.swift */,
+			);
+			path = MochiTests;
+			sourceTree = "<group>";
+		};
+		CF5E594876079175C6CBDC4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E5708D9AFC95C265FAC44A8 /* Mochi.app */,
+				7B7568A3FED4CDAB1349A569 /* MochiTests.xctest */,
+				58C9310A4D05A299B1765E55 /* MochiWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D802968F211E54237BF42831 /* CatchUp */ = {
+			isa = PBXGroup;
+			children = (
+				ED4EF409D681431394F63550 /* CatchUpView.swift */,
+			);
+			path = CatchUp;
+			sourceTree = "<group>";
+		};
+		D88C1B7A845E2C7A9B47BFBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A69BA6563B4E54BDBBA2D0C /* CaptionEngine.swift */,
+				93FA6DF74EF35680E1DE429F /* ConversationModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E645C34594365662E7B7A4EB /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				633E4F46DCF7226009034F05 /* ConversationView.swift */,
+				F9DC77B31F7B8EC2F73A9B3D /* SpeakerEditorView.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		EFE5E9605218ADC2F4C1D2E2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4C91F4BDA157165B454382DD /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F5546E47DF885DCCD9676E7A /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				DA842399B39BD392FB58B5BE /* ConsentView.swift */,
+			);
+			path = Consent;
+			sourceTree = "<group>";
+		};
+		F8DAED51FF2D3E5B40FA5E2B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				CF368A4479AF2BD127B62732 /* MochiTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		FCCFE7A38D018C90FC76BCC4 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9DEADCF239183A9E01C836FB /* ConversationStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23F0CBACB6A24F1429669699 /* Mochi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6765856521F19FD153EF08C3 /* Build configuration list for PBXNativeTarget "Mochi" */;
+			buildPhases = (
+				00452A60DD85348914B8D722 /* Sources */,
+				CD7B913D1D8121133F262748 /* Resources */,
+				0C76DBAC953E04058FDEF313 /* Frameworks */,
+				4D24C12E9D97604EA818816F /* Embed Watch Content */,
+				55490550E3735E3EE9046F33 /* Embed temporary OpenAI key */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C126107DE985CF22DF71045E /* PBXTargetDependency */,
+			);
+			name = Mochi;
+			packageProductDependencies = (
+				22301E40C65FD30F82EAC68C /* FluidAudio */,
+				B7EBD997F03763B93E3447C2 /* WhisperKit */,
+			);
+			productName = Mochi;
+			productReference = 1E5708D9AFC95C265FAC44A8 /* Mochi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A488D784D2E7B77B4159EAE8 /* MochiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25BE969660AD77B81851298D /* Build configuration list for PBXNativeTarget "MochiWatch" */;
+			buildPhases = (
+				928B23CC3D83846BA2D988CE /* Sources */,
+				618F6238E9DB6A001DEA84CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MochiWatch;
+			packageProductDependencies = (
+			);
+			productName = MochiWatch;
+			productReference = 58C9310A4D05A299B1765E55 /* MochiWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7A9EEB1E07E5D8A61251E44 /* MochiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971DB852EC814E9E36153572 /* Build configuration list for PBXNativeTarget "MochiTests" */;
+			buildPhases = (
+				79617BE8EAE84AE24E24AD1D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9F8F846DE171619D518EBB9 /* PBXTargetDependency */,
+			);
+			name = MochiTests;
+			packageProductDependencies = (
+			);
+			productName = MochiTests;
+			productReference = 7B7568A3FED4CDAB1349A569 /* MochiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CEDBBB38DF9FF12BE415E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					23F0CBACB6A24F1429669699 = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+					A488D784D2E7B77B4159EAE8 = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+					B7A9EEB1E07E5D8A61251E44 = {
+						DevelopmentTeam = 3WG2K4XBS6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 71988629A9030896CFC1A3F8 /* Build configuration list for PBXProject "Mochi" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 89C31DB77873A61400CBD988;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4275EB5F952ABC945BEFBEDC /* XCRemoteSwiftPackageReference "FluidAudio" */,
+				CCA1D98E93B65DEF4D588EA4 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CF5E594876079175C6CBDC4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23F0CBACB6A24F1429669699 /* Mochi */,
+				B7A9EEB1E07E5D8A61251E44 /* MochiTests */,
+				A488D784D2E7B77B4159EAE8 /* MochiWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD7B913D1D8121133F262748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FB94EE2D365B611D4F4963 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55490550E3735E3EE9046F33 /* Embed temporary OpenAI key */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Embed temporary OpenAI key";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nset -eu\n\nenvironment_file=\"${SRCROOT}/.env.local\"\noutput_file=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MochiOpenAIKey.txt\"\n\n/bin/mkdir -p \"$(/usr/bin/dirname \"${output_file}\")\"\n\nif [ ! -f \"${environment_file}\" ]; then\n  : > \"${output_file}\"\n  echo \"Mochi: no local OpenAI key was embedded.\"\n  exit 0\nfi\n\nopenai_key=$(/usr/bin/awk '\n  /^[[:space:]]*OPENAI_API_KEY[[:space:]]*=/ {\n    line = $0\n    sub(/^[[:space:]]*OPENAI_API_KEY[[:space:]]*=[[:space:]]*/, \"\", line)\n    print line\n    exit\n  }\n' \"${environment_file}\")\n\ncase \"${openai_key}\" in\n  \\\"*\\\") openai_key=${openai_key#\\\"}; openai_key=${openai_key%\\\"} ;;\n  \\'*\\') openai_key=${openai_key#\\'}; openai_key=${openai_key%\\'} ;;\nesac\n\nif [ -z \"${openai_key}\" ]; then\n  : > \"${output_file}\"\n  echo \"Mochi: OPENAI_API_KEY was not found in .env.local.\"\n  exit 0\nfi\n\n/usr/bin/printf '%s' \"${openai_key}\" > \"${output_file}\"\n/bin/chmod 600 \"${output_file}\"\necho \"Mochi: embedded the temporary local OpenAI credential.\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00452A60DD85348914B8D722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E3BAB346D4B54B6975570A /* AssistHomeView.swift in Sources */,
+				1429B4B99701870F574E0EFE /* AudioPlaybackService.swift in Sources */,
+				29397A3377857AD806A892B5 /* AudiogramService.swift in Sources */,
+				A349F9F5FAA48B1BC39624C9 /* CaptionEngine.swift in Sources */,
+				631C3AB0610DDB94F0AD907F /* CatchUpView.swift in Sources */,
+				57946352C50B0539D600F948 /* ConsentView.swift in Sources */,
+				20291C2A39B1313082DCE011 /* ConversationArchive.swift in Sources */,
+				43462907D1DFF3405FF6ADBA /* ConversationModels.swift in Sources */,
+				9081D7D6BE24CDF0D380ECF7 /* ConversationStore.swift in Sources */,
+				DAD70DB06AB0C305C2914D08 /* ConversationView.swift in Sources */,
+				04EB4471E4F0AAB47970ED40 /* DirectOpenAIClient.swift in Sources */,
+				6C7A99B73F42427ED547486D /* EmbeddedOpenAIKeyProvider.swift in Sources */,
+				54557A84E886FB4F6C2D0179 /* LocalSemanticAnalyzer.swift in Sources */,
+				DCD1C10D3EF49055ED01AE69 /* MochiAPI.swift in Sources */,
+				A94407C4113E1256E5F3F1F1 /* MochiApp.swift in Sources */,
+				2FF34C97FA7BEFCB88E16D48 /* MochiTheme.swift in Sources */,
+				DAB366631D8F1C6FA06A8F6B /* OnboardingView.swift in Sources */,
+				8A5750EFC9EB91D68FA02D17 /* OpenAIRealtimeTranscriber.swift in Sources */,
+				742A62D8FC83E99C54FE87E4 /* PhoneWatchConnectivityService.swift in Sources */,
+				7BEACA5C99C1B98F3B5C0F87 /* RecapView.swift in Sources */,
+				D0EEF8C73236B9A89B1EDA5D /* RecordingChatView.swift in Sources */,
+				3C83E7CE65ADEB6CB03E885A /* RecordingsView.swift in Sources */,
+				59F47F7094898292250D2765 /* RepairView.swift in Sources */,
+				CE1C9FB63247FEAAD0AA7621 /* SettingsView.swift in Sources */,
+				07A26F887845667A841C0C6F /* SimulatorSpeechTranscriber.swift in Sources */,
+				5372CCCBB845928E9D4C6083 /* SpeakerEditorView.swift in Sources */,
+				26D601C7B79F337B68F5BB07 /* SpeechRecognitionService.swift in Sources */,
+				8FA4CAD9C68817522D5417D0 /* WhisperKitCaptionTranscriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79617BE8EAE84AE24E24AD1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6E0C61DD094482F13CBF50 /* ConversationArchiveTests.swift in Sources */,
+				04B8EAC0153F35BD1E4DEACB /* ConversationStoreTests.swift in Sources */,
+				0DF0D7F86922FBEC27F4E748 /* LocalSemanticAnalyzerTests.swift in Sources */,
+				EBCC329DCE66D12F06C54ED9 /* WatchConnectivityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		928B23CC3D83846BA2D988CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84711246748C469D8862310F /* MochiWatchApp.swift in Sources */,
+				3C1EC2A4266920FCFEA56D02 /* MochiWatchTheme.swift in Sources */,
+				3A44C7A915CDDA39A95BF2FA /* WatchRootView.swift in Sources */,
+				6C257ECD246C25D72D4A112F /* WatchSessionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9F8F846DE171619D518EBB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F0CBACB6A24F1429669699 /* Mochi */;
+			targetProxy = 831AF273774E90CE11C6569A /* PBXContainerItemProxy */;
+		};
+		C126107DE985CF22DF71045E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A488D784D2E7B77B4159EAE8 /* MochiWatch */;
+			targetProxy = 4DA584587C9643BB347B9C1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12518201ACCF03E330B5FC9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mochi.app/Mochi";
+			};
+			name = Release;
+		};
+		197C0EBF34422BDCEB1CB070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mochi.app/Mochi";
+			};
+			name = Debug;
+		};
+		273E3EA7AC4B5ADB5695F188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MochiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi.watchkitapp;
+				PRODUCT_NAME = MochiWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		512F3C7C186A8D421535E5CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mochi/Mochi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Mochi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi;
+				PRODUCT_NAME = Mochi;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6A7DB375EC44E2ACFD25BCE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mochi/Mochi.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = Mochi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi;
+				PRODUCT_NAME = Mochi;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7990DA4203B657378D3082ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3WG2K4XBS6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		AE3E47078ABCC109E2810273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3WG2K4XBS6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		DD2C1E2057B8FA74EADA7206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MochiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesangrellera.mochi.watchkitapp;
+				PRODUCT_NAME = MochiWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25BE969660AD77B81851298D /* Build configuration list for PBXNativeTarget "MochiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2C1E2057B8FA74EADA7206 /* Debug */,
+				273E3EA7AC4B5ADB5695F188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6765856521F19FD153EF08C3 /* Build configuration list for PBXNativeTarget "Mochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7DB375EC44E2ACFD25BCE3 /* Debug */,
+				512F3C7C186A8D421535E5CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71988629A9030896CFC1A3F8 /* Build configuration list for PBXProject "Mochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7990DA4203B657378D3082ED /* Debug */,
+				AE3E47078ABCC109E2810273 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		971DB852EC814E9E36153572 /* Build configuration list for PBXNativeTarget "MochiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				197C0EBF34422BDCEB1CB070 /* Debug */,
+				12518201ACCF03E330B5FC9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4275EB5F952ABC945BEFBEDC /* XCRemoteSwiftPackageReference "FluidAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidInference/FluidAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.4;
+			};
+		};
+		CCA1D98E93B65DEF4D588EA4 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/argmax-oss-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22301E40C65FD30F82EAC68C /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4275EB5F952ABC945BEFBEDC /* XCRemoteSwiftPackageReference "FluidAudio" */;
+			productName = FluidAudio;
+		};
+		B7EBD997F03763B93E3447C2 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCA1D98E93B65DEF4D588EA4 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8CEDBBB38DF9FF12BE415E62 /* Project object */;
+}

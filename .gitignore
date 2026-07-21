@@ -16,7 +16,7 @@ xcuserdata/
 Secrets.xcconfig
 
 # Local simulator QA captures
-clearcue-*.png
+/mochi-*.png
 
 # Web build and deployment artifacts
 Website/node_modules/

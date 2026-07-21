@@ -54,10 +54,10 @@ In another terminal:
 
 ```sh
 xcodegen generate
-open ClearCue.xcodeproj
+open Mochi.xcodeproj
 ```
 
-Select an iPhone and run the `ClearCue` scheme. The build phase copies the key into
+Select an iPhone and run the `Mochi` scheme. The build phase copies the key into
 the signed app bundle, so this private build can use Realtime captions, GPT-5.6,
 and post-recording diarized transcription without running the Node server.
 First-run onboarding downloads multilingual Whisper before Home is available,
@@ -65,7 +65,7 @@ then Mochi warms Core ML in the background before its hearing actions become
 available; recording never initiates a model download. Physical iPhones use
 `base` with Neural Engine acceleration. Simulator builds use `tiny` because
 Simulator has no Neural Engine and can stall while specializing the larger model.
-If `.env.local` is absent, the existing `ClearCueAPIBaseURL` server path remains
+If `.env.local` is absent, the existing `MochiAPIBaseURL` server path remains
 available as the production-oriented fallback.
 
 The `MochiWatch` scheme installs the companion on a paired Apple Watch. Install Apple’s watchOS platform from Xcode Settings → Components before using a Watch simulator. Launch the iPhone app once so Watch Connectivity can activate. The Watch intentionally does not open the microphone or bypass consent: it requests a session, then asks the user to confirm recording on iPhone. Apple requires a physical paired iPhone and Watch for final Watch Connectivity and wrist-haptic validation.
@@ -75,7 +75,7 @@ Mochi defaults to Realtime captions for the lowest latency. Preferences can swit
 Run tests from Xcode or with:
 
 ```sh
-xcodebuild test -project ClearCue.xcodeproj -scheme ClearCue -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5'
+xcodebuild test -project Mochi.xcodeproj -scheme Mochi -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5'
 ```
 
 The temporary private TestFlight archive embeds the API key. Anyone who can obtain
@@ -156,14 +156,14 @@ Capture starts only after an explicit user action and participant-notification a
 
 ## Core source layout
 
-- `ClearCue/App` — app entry and root routing
-- `ClearCue/Models` — transcript, attention, repair, and recap evidence models
-- `ClearCue/Services` — Realtime and WhisperKit transcription, FluidAudio diarization, recording/playback, API client, and conservative semantic analysis
+- `Mochi/App` — app entry and root routing
+- `Mochi/Models` — transcript, attention, repair, and recap evidence models
+- `Mochi/Services` — Realtime and WhisperKit transcription, FluidAudio diarization, recording/playback, API client, and conservative semantic analysis
 - `Server` — permanent-key boundary, short-lived Realtime credentials, diarized full-recording transcription, grounded GPT-5.6 recap, and recording chat
-- `ClearCue/Store` — session state machine and guided demo engine
-- `ClearCue/Features` — home, consent, conversation, repair, catch-up, evidence, and recap views
+- `Mochi/Store` — session state machine and guided demo engine
+- `Mochi/Features` — home, consent, conversation, repair, catch-up, evidence, and recap views
 - `MochiWatch` — glanceable watchOS companion and Watch Connectivity state model
-- `ClearCueTests` — grounding, candidate-safety, and repair-provenance tests
+- `MochiTests` — grounding, candidate-safety, and repair-provenance tests
 
 ## Hackathon submission reminder
 

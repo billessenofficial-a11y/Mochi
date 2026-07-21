@@ -175,7 +175,7 @@ async function createRecap(response, body) {
       text: {
         format: {
           type: "json_schema",
-          name: "clearcue_conversation_recap",
+          name: "mochi_conversation_recap",
           strict: true,
           schema: {
             type: "object",
